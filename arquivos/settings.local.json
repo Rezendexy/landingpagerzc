@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Bitmap]::FromFile\\(\"k:\\\\RZC site\\\\img\\\\logoprincipal.png\"\\); for \\($y=20; $y -lt 100; $y+=10\\) { for \\($x=10; $x -lt 150; $x+=10\\) { $p = $img.GetPixel\\($x,$y\\); if \\($p.A -gt 50\\) { \"x=$x y=$y ARGB=$\\($p.A\\),$\\($p.R\\),$\\($p.G\\),$\\($p.B\\)\" } } }; $img.Dispose\\(\\))",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Bitmap]::FromFile\\(\"k:\\\\RZC site\\\\img\\\\logosegundaria.png\"\\); for \\($y=20; $y -lt 100; $y+=15\\) { for \\($x=10; $x -lt 100; $x+=15\\) { $p = $img.GetPixel\\($x,$y\\); if \\($p.A -gt 50\\) { \"x=$x y=$y ARGB=$\\($p.A\\),$\\($p.R\\),$\\($p.G\\),$\\($p.B\\)\" } } }; $img.Dispose\\(\\))",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Bitmap]::FromFile\\(\"k:\\\\RZC site\\\\img\\\\jordanfundo.png\"\\); $w=$img.Width; $h=$img.Height; $pts = @\\(@\\(10,10\\),@\\(50,10\\),@\\(100,10\\),@\\(300,10\\),@\\(600,10\\),@\\(10,180\\),@\\(600,180\\),@\\(10,360\\),@\\(600,360\\),@\\(337,185\\)\\); foreach \\($pt in $pts\\) { $p = $img.GetPixel\\($pt[0],$pt[1]\\); \"x=$\\($pt[0]\\) y=$\\($pt[1]\\) ARGB=$\\($p.A\\),$\\($p.R\\),$\\($p.G\\),$\\($p.B\\)\" }; $img.Dispose\\(\\))"
+    ]
+  }
+}
